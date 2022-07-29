@@ -5,6 +5,7 @@
     display: flex
     align-items: center
     justify-content: space-between
+    padding-bottom: 20px
     &__offer
       margin-left: 14px
       margin-top: 4px
@@ -24,6 +25,8 @@
   &-description
     font-size: 12px
     line-height: 15px
+  &-grid
+    display: flex
 .stars
   flex-basis: 100%
 .offer
@@ -46,3 +49,30 @@
   &__counter
     font-size: 14px
     line-height: 18px
+.swiper-container
+  width: 100%
+  height: 450px
+  position: relative
+  border-radius: 8px
+.slider
+  width: 728px
+  &-button
+    position: absolute
+    width: 30px
+    height: 30px
+    top: 50%
+    transform: translateY(-50%)
+    border: none
+    background-color: transparent
+    cursor: pointer
+    z-index: 99
+    background-repeat: no-repeat
+    background-size: 10px
+    background-position: center
+    &--next
+      right: 35px
+      background-image: url(./img/arrow-brew.svg)
+
+    &--prev
+      left: 18px
+      background-image: url(./img/arrow-prev.svg)
