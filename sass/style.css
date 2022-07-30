@@ -635,6 +635,77 @@ template {
   overflow: hidden;
 }
 
+.newsletter {
+  position: relative;
+  padding: 98px 0 87px 0;
+  background-image: url("../img/newsletter-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.newsletter:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 34, 61, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  button: 0;
+}
+.newsletter-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 731px;
+  margin: auto;
+}
+.newsletter-title {
+  color: #fff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+.newsletter-title__strong {
+  display: block;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.subscribe {
+  position: relative;
+  width: 355px;
+  height: 55px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.subscribe__input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding-left: 33px;
+  padding-left: 75px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+.subscribe__button {
+  position: absolute;
+  min-width: 65px;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border: none;
+  background-color: #EC1F46;
+  color: #fff;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -653,7 +724,8 @@ template {
   .logo {
     width: 132px;
   }
-  .container {
+  .container,
+.newsletter-wrapper {
     max-width: 700px;
   }
   .navbar-top {
@@ -754,6 +826,12 @@ template {
   .map {
     width: 100%;
   }
+  .newsletter-wrapper {
+    max-width: 576px;
+    width: 92%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 @media (max-width: 576px) {
   .logo {
@@ -765,7 +843,13 @@ template {
   .hotel__slider {
     margin-bottom: 20px;
   }
-  .swiper-slide__image {
+  .newsletter {
+    padding: 76px 0 83px 0;
+  }
+  .newsletter__title {
+    margin-bottom: 37px;
+  }
+  .subscribe {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
