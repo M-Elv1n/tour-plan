@@ -42,6 +42,10 @@
     width: 100%
   .map
     width: 340px
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -102,14 +106,30 @@
       width: 92%
       flex-direction: column
       align-items: flex-start
+  .reviews
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &::after, &::before
+          display: none
+      &__button
+        top: 70px
+        &--prev
+          left: 50%
+          margin-left: -65px
+          transform: translate(-50%, 0)
+        &--next
+          right: 50%
+          margin-right: -65px
+          transform: translate(50%, 0)
 @media (max-width: 576px)
   .logo
     width: 99px
-  .slider
-    width: 250px
   .hotel
     &__slider
       margin-bottom: 20px
+    &-slider
+      height: 250px
   .newsletter
     padding: 76px 0 83px 0
     &__title
