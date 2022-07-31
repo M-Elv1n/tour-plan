@@ -887,6 +887,133 @@ template {
   cursor: pointer;
 }
 
+.footer {
+  background-color: #0A223D;
+  color: #fff;
+  padding-top: 108px;
+  padding-bottom: 46px;
+}
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
+  grid-template-columns: repeat(4, minmax(min-content, 1fr));
+  grid-gap: 20px;
+  grid-auto-rows: minmax(40px, -webkit-min-content);
+  grid-auto-rows: minmax(40px, min-content);
+}
+.footer__logo {
+  width: 166px;
+  align-self: center;
+  grid-row: 1/3;
+}
+.footer__categories {
+  grid-row: 1/4;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+  min-width: 83px;
+  justify-content: space-between;
+}
+.footer__social-network {
+  display: flex;
+  align-content: center;
+  grid-row: 2/4;
+  grid-column: span 2;
+}
+.footer__contact-details {
+  grid-column: span 2;
+}
+.footer__contact-form {
+  grid-column: span 2;
+}
+.footer__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer__ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.footer__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+}
+.footer__title--inline {
+  margin: 0 43px 0 0;
+}
+.footer__title--inline--mb3 {
+  margin-bottom: 30px;
+}
+.footer__item {
+  display: flex;
+  align-items: flex-start;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #BDBDBD;
+}
+.footer__item-mb2 {
+  margin-bottom: 20px;
+}
+.footer__icon-wrapper {
+  min-width: 40px;
+}
+.footer__text {
+  color: #BDBDBD;
+  margin-bottom: 22px;
+}
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+}
+.footer__input {
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 0 23px;
+  height: 50px;
+  margin-bottom: 15px;
+  flex-basis: 48%;
+}
+.footer__message {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 18px 23px;
+  border: none;
+  border-radius: 4px;
+  flex-basis: 100%;
+  margin-bottom: 23px;
+}
+.footer__button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+}
+.footer__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
