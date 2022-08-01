@@ -43,3 +43,10 @@ const reviewsSwiper = new Swiper('.reviews-slider', {
   },
   // effect: "coverflow",
 });
+
+// создание меню кнопки для телефона
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener('click', function () {
+  console.log("click button");
+  document.querySelector(".navbar-button").classList.toggle("navbar-button--visible");
+});
