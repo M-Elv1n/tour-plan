@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
-  rel="stylesheet">
+    rel="stylesheet">
   <link rel="stylesheet" href="sass/swiper-bundle.min.css">
   <link rel="stylesheet" href="sass/style.css">
   <title>Best Tour Plan - Hotel Booking</title>
 </head>
+
 <body>
   <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
-          <img src="./img/horizontal-logo.svg" 
-          alt="Logo: Best Tour Plan" 
-          class="logo_image">
+          <img src="./img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo_image">
         </a>
 
         <form action="#" class="search navbar__search navbar__search--mobile_hidden">
-          <input type="text" 
-          class="search__input"
-          placeholder="Search Location">
+          <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="./img/search.svg" alt="Icon: search">
           </button>
         </form>
 
         <a href="#" class="user navbar__user navbar__user--mobile_hidden">
-          <img src="./img/user-avatar.jpg" 
-          alt="Avatar: Nathan" 
-          class="user__avatar">
+          <img src="./img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
 
           <span class="user__name">Nathan</span>
         </a>
@@ -43,7 +39,7 @@
           <span class="menu-button__line"></span>
         </button>
       </div>
-      <!-- /.navbar-top -->     
+      <!-- /.navbar-top -->
     </div>
     <!-- /.container -->
     <div class="navbar-button">
@@ -128,7 +124,7 @@
           </p>
         </div>
         <!-- /.hotel-info__text -->
-        <div class="rating hotel-info__rating">
+        <div data-toggle="modal" class="rating hotel-info__rating">
           <span class="rating__text">User Rattings</span>
           <span class="rating__counter">4.5/5</span>
         </div>
@@ -154,7 +150,7 @@
             </div>
             <!-- If we need pagination -->
             <!-- <div class="swiper-pagination"></div> -->
-          
+
             <!-- If we need navigation buttons -->
             <button class="slider-button slider-button--prev"></button>
             <button class="slider-button slider-button--next"></button>
@@ -193,7 +189,8 @@
               <!-- /.booking__heading -->
             </div>
             <!-- /.booking__call-center -->
-            <button class="button booking__button">View Other Options</button>
+            <button data-toggle="modal" class="button booking__button">View Other Options
+            </button>
           </div>
           <!-- /.booking -->
           <div class="map">
@@ -232,8 +229,7 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="./img/revievs-avatar.jpg" 
-                alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                <img src="./img/revievs-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
                 <h3 class="reviews-slider__username">Megan Fox</h3>
                 <span class="reviews-slider__data">Stayed 18 Nov, 2019</span>
                 <div class="reviews-slider__rating">
@@ -247,10 +243,14 @@
               </div>
               <!-- /.reviews-slider__profile -->
               <p class="reviews-slider__text">
-                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only
-                that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which
-                were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per
-                atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it
+                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well.
+                Issue was only
+                that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of
+                gallery which
+                were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not
+                good as per
+                atmosphere, it is very nearby most of the popular places but self location in a narrow street is not
+                good. Overall it
                 was a good experience and could recommend.
               </p>
             </div>
@@ -271,9 +271,7 @@
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
         <div class="card activities__card">
-          <img src="./img/activity-1.jpg" 
-          alt="The curious corner of chamarel" 
-          class="card__image">
+          <img src="./img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">
             The curious corner of chamarel
           </h3>
@@ -281,8 +279,7 @@
         </div>
         <!-- card -->
         <div class="card activities__card">
-          <img src="./img/activity-2.jpg" alt="Gymkhana club golf course" 
-          class="card__image">
+          <img src="./img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">
             Gymkhana club golf course
           </h3>
@@ -290,9 +287,7 @@
         </div>
         <!-- card -->
         <div class="card activities__card">
-          <img src="./img/activity-3.jpg" 
-          alt="Tamarind falls hiking trip - full day" 
-          class="card__image">
+          <img src="./img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h3 class="card__title">
             Tamarind falls hiking trip - full day
           </h3>
@@ -300,9 +295,7 @@
         </div>
         <!-- card -->
         <div class="card activities__card">
-          <img src="./img/activity-4.jpg" 
-          alt="The blue marine discovery quest" 
-          class="card__image">
+          <img src="./img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">
             The blue marine discovery quest
           </h3>
@@ -317,9 +310,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <img src="./img/vertical-logo.svg" 
-        alt="Logo: best tour plan" 
-        class="logo footer__logo">
+        <img src="./img/vertical-logo.svg" alt="Logo: best tour plan" class="logo footer__logo">
         <div class="footer-list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
           <ul class="footer__ul">
@@ -423,7 +414,7 @@
             <li class="footer__item footer__item-mb2">
               <div class="footer__icon-wrapper">
                 <img src="./img/phone-call-f.svg" alt="icon: phone call" class="footer__icon">
-              </div>             
+              </div>
               Tel (business hours) : 269 1500 <br>
               Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
               Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
@@ -443,7 +434,8 @@
           <form action="#" class="footer__form">
             <input type="text" class="input footer__input" placeholder="Your Full Name*">
             <input type="text" class="input footer__input" placeholder="Phone Number*">
-            <textarea class="footer__message" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <textarea class="message footer__message" name="" id="" cols="30" rows="10"
+              placeholder="Message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
@@ -455,7 +447,28 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="./img/close.svg" alt="icon: close">
+      </a>
+      <h3 class="modal__title">Send us a message</h3>
+      <form action="#" class="modal__form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*">
+        <input type="text" class="input modal__input" placeholder="Phone Number*">
+        <textarea class="message modal__message" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        <button class="button modal__button" type="submit">Send</button>
+        <span class="modal__info">* Required Fields</span>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
+
 </html>
